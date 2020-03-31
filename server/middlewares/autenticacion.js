@@ -24,7 +24,7 @@ let verificarToken = (req,res,next) => {
 };
 
 // =========================
-// Verificar Token
+// Verificar Admin
 // =========================
 
 let verificaAdmin = (req,res,next) => {
@@ -38,7 +38,7 @@ let verificaAdmin = (req,res,next) => {
     res.json({
         ok: false,
         err: {
-            message: 'El usuario no es administrados'
+            message: 'El usuario no es administrador'
         }
     });
 
